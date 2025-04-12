@@ -61,7 +61,7 @@ class _OrderFuelPageState extends State<OrderFuelPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Welcome, Dear ',
+                'Welcome, Dear Customer',
                 style: TextStyle(
                   fontSize: 22.sp,
                   fontWeight: FontWeight.bold,
