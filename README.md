@@ -67,7 +67,7 @@ Push Notifications — Order status updates
 
 ##user screen
 <p align="center">
-  <img src="" alt="https://github.com/user-attachments/assets/d58c9429-792c-4d45-a549-ec12d2e38966" width="200"/>
+  <img src="https://github.com/user-attachments/assets/d58c9429-792c-4d45-a549-ec12d2e38966" alt="" width="200"/>
   <img src="https://github.com/user-attachments/assets/f1f77612-9e01-4f1b-8e2f-dc5af86a1be9" alt="" width="200"/>
   <img src="https://github.com/user-attachments/assets/e7ed744c-9296-420e-899f-864591608f12" alt="" width="200"/>
 </p>
