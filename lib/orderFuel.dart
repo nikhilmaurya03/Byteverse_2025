@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:fuel_delivery/user_bookNow.dart';
 
 class OrderFuelPage extends StatefulWidget {
   OrderFuelPage({super.key});
@@ -267,7 +268,11 @@ class _OrderFuelPageState extends State<OrderFuelPage> {
                   ),
                   SizedBox(height: 20.h),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(
+                        builder: (context) => PlaceOrderScreen(),
+                      ));
+                    },
                     style: ElevatedButton.styleFrom(
                       padding: EdgeInsets.symmetric(vertical: 14.h),
                       shape: RoundedRectangleBorder(
@@ -276,7 +281,7 @@ class _OrderFuelPageState extends State<OrderFuelPage> {
                       backgroundColor: Colors.blueAccent,
                     ),
                     child: Center(
-                      child: Text("Place Order",
+                      child: Text("Place Order", 
                           style:
                               TextStyle(fontSize: 16.sp, color: Colors.white)),
                     ),
