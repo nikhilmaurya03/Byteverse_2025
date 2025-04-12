@@ -54,12 +54,14 @@ Push Notifications — Order status updates
 
 📸 Screenshots
 
+##intro
 <p align="center">
   <img src="https://github.com/user-attachments/assets/bcbf3c1c-a071-48ec-8a7a-bd7de498c27a" alt="" width="200"/>
-  <img src="(https://github.com/user-attachments/assets/a7ba74e4-eae3-4380-bacb-6550620b4897" alt="" width="200"/>
+  <img src="https://github.com/user-attachments/assets/3de914be-9e54-4667-a173-dd1c631eb5de" alt="" width="200"/>
   <img src="https://github.com/user-attachments/assets/26011d83-3939-4dd1-837b-af0481e3e459" alt="" width="200"/>
    <img src="https://github.com/user-attachments/assets/8171f3c2-5db9-4f9e-9bda-97fecbbd25aa" alt="" width="200"/>
 </p>
+
 
 
 
