@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fuel_delivery/log_in.dart';
+import 'package:motion_toast/motion_toast.dart';
 
 class SignupPage extends StatefulWidget {
   const SignupPage({super.key});
@@ -308,6 +309,10 @@ class _SignupPageState extends State<SignupPage> {
                     onPressed: () {
                       if (_formKey.currentState!.validate() && agreeToTerms) {
                         // Handle create account
+                        MotionToast.success(
+                          title: Text("Success"),
+                          description: Text("Account created successfully"),
+                        ).show(context);
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(

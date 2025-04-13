@@ -5,7 +5,7 @@ import 'package:fuel_delivery/services.dart';
 import 'package:fuel_delivery/adminDashboard.dart';
 import 'package:fuel_delivery/sign_up.dart';
 import 'package:fuel_delivery/todayOrder.dart';
-
+import 'package:motion_toast/motion_toast.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -22,27 +22,38 @@ class _LoginPageState extends State<LoginPage> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
- showLoginFailureToast() {
-  Fluttertoast.showToast(
-    msg: "Login failed. Please try again!",
-    toastLength: Toast.LENGTH_SHORT,
-    gravity: ToastGravity.TOP,
-    backgroundColor: Colors.red,
-    textColor: Colors.white,
-    fontSize: 16.0,
-  );
-  // Fluttertoast.showToast(
-  //       msg: "This is Center Short Toast",
-  //       toastLength: Toast.LENGTH_SHORT,
-  //       gravity: ToastGravity.CENTER,
-  //       timeInSecForIosWeb: 1,
-  //       backgroundColor: Colors.red,
-  //       textColor: Colors.white,
-  //       fontSize: 16.0
-  //   );
-  
+  showSuccessToast() {
+    MotionToast.success(
+      toastAlignment: Alignment.topCenter,
+      title: Text("Success"),
+      description: Text("Login successful!"),
+    ).show(context);
+  }
 
-}
+  showLoginFailureToast() {
+    MotionToast.error(
+      toastAlignment: Alignment.topCenter,
+      title: Text("Failed"),
+      description: Text("Login failed. Please try again!"),
+    ).show(context);
+    // Fluttertoast.showToast(
+    //   msg: "Login failed. Please try again!",
+    //   toastLength: Toast.LENGTH_SHORT,
+    //   gravity: ToastGravity.TOP,
+    //   backgroundColor: Colors.red,
+    //   textColor: Colors.white,
+    //   fontSize: 16.0,
+//  );
+    // Fluttertoast.showToast(
+    //       msg: "This is Center Short Toast",
+    //       toastLength: Toast.LENGTH_SHORT,
+    //       gravity: ToastGravity.CENTER,
+    //       timeInSecForIosWeb: 1,
+    //       backgroundColor: Colors.red,
+    //       textColor: Colors.white,
+    //       fontSize: 16.0
+    //   );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -233,42 +244,42 @@ class _LoginPageState extends State<LoginPage> {
                         if (selectedRole == 'Admin') {
                           if (emailController.text == "admin@fuelflow.com" &&
                               passwordController.text == "password") {
+                                showSuccessToast();
                             Navigator.push(
                               context,
                               MaterialPageRoute(
                                   builder: (context) => AdminGasStationPage()),
                             );
+                          } else {
+                            showLoginFailureToast();
                           }
-                          else {
-                        showLoginFailureToast();
-                      }
                         } else if (selectedRole == 'Gas Station') {
                           if (emailController.text == "station@fuelflow.com" &&
                               passwordController.text == "password") {
+                                showSuccessToast();
                             Navigator.push(
                               context,
                               MaterialPageRoute(
                                   builder: (context) => TodayOrdersPage()),
                             );
+                          } else {
+                            showLoginFailureToast();
                           }
-                          else {
-                        showLoginFailureToast();
-                      }
                         } else {
                           if (emailController.text == "user@fuelflow.com" &&
                               passwordController.text == "password") {
+                                showSuccessToast();
                             Navigator.push(
                               context,
                               MaterialPageRoute(
                                   builder: (context) => OurServicesPage()),
                             );
+                          } else {
+                            showLoginFailureToast();
                           }
-                           else {
-                        showLoginFailureToast();
-                      }
                         }
-                      } 
-                     
+                      }
+
                       // Handle login
                     },
                     style: ElevatedButton.styleFrom(

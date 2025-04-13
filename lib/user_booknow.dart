@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:motion_toast/motion_toast.dart';
 
 class PlaceOrderScreen extends StatefulWidget {
   final bool isMechHire;
@@ -66,45 +67,57 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
   void oilbookNow() {
     if (selectedPumpIndex == null) {
       Fluttertoast.showToast(msg: 'Please select pump first');
+    // MotionToast.error(
+    //   toastAlignment: Alignment.topCenter,
+    //   title: const Text("Error"),
+    //   description: const Text("Please select pump first"),
+    // ).show(context);
       return;
     }
 
     final selectedPump = petrolPumps[selectedPumpIndex!];
 
     // Here you can proceed to Razorpay or save order based on selectedPaymentMethod
-    Fluttertoast.showToast(
-      msg:
-          'Order placed from ${selectedPump['name']} with $selectedPaymentMethod',
-    );
+    // Fluttertoast.showToast(
+    //   msg:
+    //       '',
+    // );
+
+    MotionToast.success(
+      toastAlignment: Alignment.topCenter,
+      title: Text("Success"),
+      description: Text("Order placed from ${selectedPump['name']} with $selectedPaymentMethod"),
+    ).show(context);
 
     
 
-    // Example logic:
-    // if (selectedPaymentMethod == 'ONLINE') {
-    //    triggerRazorpayPayment();
-    // } else {
-    //    saveOrderToDatabase();
-    // }
+    
   }
 
   void mechanicbookNow() {
     if (selectedMechanicIndex == null) {
       Fluttertoast.showToast(msg: 'Please select mechanic first');
+    // MotionToast.error(
+    //   toastAlignment: Alignment.topCenter,
+    //   title: const Text("Error"),
+    //   description: Text("Please select mechanic first"),
+    // ).show(context);
       return;
     }
 
     final selectedMechanic = mechanics[selectedMechanicIndex!];
 
-    Fluttertoast.showToast(
-      msg: 'Order placed from ${selectedMechanic['name']} with $selectedPaymentMethod',
-    );
+    // Fluttertoast.showToast(
+    //   msg: '',
+    // );
 
-    // Example logic:
-    // if (selectedPaymentMethod == 'ONLINE') {
-    //    triggerRazorpayPayment();
-    // } else {
-    //    saveOrderToDatabase();
-    // }
+     MotionToast.success(
+      toastAlignment: Alignment.topCenter,
+      title: Text("Success"),
+      description: Text("Order placed from ${selectedMechanic['name']} with $selectedPaymentMethod"),
+    ).show(context);
+
+   
   }
 
   @override
