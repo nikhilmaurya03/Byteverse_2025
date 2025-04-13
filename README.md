@@ -56,7 +56,7 @@ Push Notifications — Order status updates
 
 ##intro
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/bcbf3c1c-a071-48ec-8a7a-bd7de498c27a" alt="" width="200"/>
+  <img src="https://github.com/user-attachments/assets/9ceae5d7-2d4f-4733-90ad-85e1696f7cde" alt="" width="200"/>
   <img src="https://github.com/user-attachments/assets/3de914be-9e54-4667-a173-dd1c631eb5de" alt="" width="200"/>
   <img src="https://github.com/user-attachments/assets/26011d83-3939-4dd1-837b-af0481e3e459" alt="" width="200"/>
    <img src="https://github.com/user-attachments/assets/8171f3c2-5db9-4f9e-9bda-97fecbbd25aa" alt="" width="200"/>
@@ -65,11 +65,23 @@ Push Notifications — Order status updates
 
 
 
+
+
 ##user screen
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d58c9429-792c-4d45-a549-ec12d2e38966" alt="" width="200"/>
+  <img src="https://github.com/user-attachments/assets/17f1ef38-b97e-40b7-9b13-094cc04feacb" alt="" width="200"/>
   <img src="https://github.com/user-attachments/assets/f1f77612-9e01-4f1b-8e2f-dc5af86a1be9" alt="" width="200"/>
   <img src="https://github.com/user-attachments/assets/e7ed744c-9296-420e-899f-864591608f12" alt="" width="200"/>
+</p>
+
+
+<p align="center">
+   <img src="https://github.com/user-attachments/assets/638f3152-cd64-4f1f-a71c-07d904a8a2cd" alt="" width="200"/>
+  <img src="https://github.com/user-attachments/assets/4cc2a6a9-f1d8-4a67-b3ab-2d11a61cc469" alt="" width="200"/>
+  <img src="https://github.com/user-attachments/assets/8447d19a-ef5f-4765-9ced-f716dc744568" alt="" width="200"/>
+ 
+
 </p>
 
 
