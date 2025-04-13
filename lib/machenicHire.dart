@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:fuel_delivery/user_booknow.dart';
 
 class HireMechanicPage extends StatelessWidget {
   const HireMechanicPage({Key? key}) : super(key: key);
@@ -171,6 +172,9 @@ class HireMechanicPage extends StatelessWidget {
                             child: ElevatedButton(
                               onPressed: () {
                                 // Add your action here
+                                Navigator.push(context, MaterialPageRoute(
+                        builder: (context) => PlaceOrderScreen(isMechHire: true,),
+                      ));
                               },
                               style: ElevatedButton.styleFrom(
                                 elevation: 3,

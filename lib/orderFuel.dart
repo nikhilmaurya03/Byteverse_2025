@@ -270,7 +270,7 @@ class _OrderFuelPageState extends State<OrderFuelPage> {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(context, MaterialPageRoute(
-                        builder: (context) => PlaceOrderScreen(),
+                        builder: (context) => PlaceOrderScreen(isMechHire: false,),
                       ));
                     },
                     style: ElevatedButton.styleFrom(

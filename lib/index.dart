@@ -68,33 +68,35 @@ class FuelFlowHomePage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 40.h),
-                  Container(
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        colors: [Colors.blue.shade200, Colors.blueAccent.shade700],
-                      ),
-                      borderRadius: BorderRadius.circular(30.r),
-                    ),
-                    child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => LoginPage()),
-                        );
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.transparent,
-                        shape: RoundedRectangleBorder(
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            colors: [Colors.blue.shade200, Colors.blueAccent.shade700],
+                          ),
                           borderRadius: BorderRadius.circular(30.r),
                         ),
-                        padding: EdgeInsets.symmetric(
-                            horizontal: 32.w, vertical: 16.h),
+                        child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(builder: (context) => LoginPage()),
+                            );
+                          },
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.transparent,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30.r),
+                            ),
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 32.w, vertical: 16.h),
+                          ),
+                          child: Text('Order Now', style: TextStyle(fontSize: 16.sp, color: Colors.white)),
+                        ),
                       ),
-                      child: Text('Order Now', style: TextStyle(fontSize: 16.sp, color: Colors.white)),
-                    ),
-                  ),
-                  SizedBox(height: 16.h),
-                  TextButton(
+                      TextButton(
                     onPressed: () {},
                     style: TextButton.styleFrom(
                       foregroundColor: Colors.white,
@@ -115,6 +117,16 @@ class FuelFlowHomePage extends StatelessWidget {
                       ],
                     ),
                   ),
+                    ],
+                  ),
+                  SizedBox(height:7.r),
+                  Row(children: [
+                   SizedBox(width: 120.r,),
+                  Image.asset('assets/hand_Gif.gif', height: 40.h, width: 40.w),
+                  ],),
+                  
+                  SizedBox(height: 16.h),
+                  
                 ],
               ),
             ),
